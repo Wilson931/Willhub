@@ -1,4 +1,3 @@
-Willhub
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +11,6 @@ Willhub
             line-height: 1.6;
             background-color: #f4f4f4;
         }
-
         h1 {
             text-align: center;
             color: #007BFF;
@@ -21,7 +19,6 @@ Willhub
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
         h2 {
             margin-top: 30px;
             color: #333;
@@ -31,7 +28,6 @@ Willhub
             display: inline-block;
             cursor: pointer;
         }
-
       .product-category {
             border: 2px solid #007BFF;
             border-radius: 10px;
@@ -43,25 +39,20 @@ Willhub
             background-color: #fff;
             position: relative;
         }
-
       .product-details {
             margin-top: 15px;
             display: none;
         }
-
       .product-category.open.product-details {
             display: block;
         }
-
       .product-details p {
             margin: 8px 0;
             font-size: 16px;
         }
-
       .product-details strong {
             color: #007BFF;
         }
-
       .language-switch {
             position: fixed;
             top: 10px;
@@ -72,21 +63,17 @@ Willhub
             border-radius: 5px;
             cursor: pointer;
         }
-
       .language-pair {
             display: flex;
             flex-direction: column;
         }
-
       .language-pair p {
             margin: 0;
             font-size: 14px;
         }
-
       .language-pair.english {
             color: #333;
         }
-
       .language-pair.chinese {
             color: #666;
         }
@@ -104,7 +91,6 @@ Willhub
             <p class="chinese">电子产品销售</p>
         </div>
     </h1>
-
     <!-- Mobile Phones Category -->
     <div class="product-category" onclick="toggleDetails(this)">
         <h2>
@@ -130,7 +116,6 @@ Willhub
                 <p><strong class="english">Description:</strong> Features a powerful A16 Bionic chip, a ProMotion display with Always - On, and a triple - camera system with 48MP Main.</p>
                 <p><strong class="chinese">描述:</strong> 搭载强大的A16仿生芯片，具备全天候显示的ProMotion显示屏，以及拥有4800万像素主摄的三摄系统。</p>
             </div>
-
             <div class="language-pair">
                 <p><strong class="english">Product 2:</strong> iPhone 15 Pro</p>
                 <p><strong class="chinese">产品2:</strong> iPhone 15 Pro</p>
@@ -147,7 +132,6 @@ Willhub
                 <p><strong class="english">Description:</strong> Equipped with the A17 Pro chip, a new Action button, and an improved camera system for better photography and videography.</p>
                 <p><strong class="chinese">描述:</strong> 配备A17 Pro芯片、全新操作按钮，以及经过改进的摄像系统，可实现更出色的拍照和摄像效果。</p>
             </div>
-
             <div class="language-pair">
                 <p><strong class="english">Product 3:</strong> iPhone 16 Pro Max</p>
                 <p><strong class="chinese">产品3:</strong> iPhone 16 Pro Max</p>
@@ -166,7 +150,6 @@ Willhub
             </div>
         </div>
     </div>
-
     <!-- Smart Watches Category -->
     <div class="product-category" onclick="toggleDetails(this)">
         <h2>
@@ -194,7 +177,6 @@ Willhub
             </div>
         </div>
     </div>
-
     <!-- Tablets Category -->
     <div class="product-category" onclick="toggleDetails(this)">
         <h2>
@@ -222,7 +204,6 @@ Willhub
             </div>
         </div>
     </div>
-
     <!-- Laptops Category -->
     <div class="product-category" onclick="toggleDetails(this)">
         <h2>
@@ -250,7 +231,6 @@ Willhub
             </div>
         </div>
     </div>
-
     <!-- Headphones Category -->
     <div class="product-category" onclick="toggleDetails(this)">
         <h2>
@@ -278,7 +258,6 @@ Willhub
             </div>
         </div>
     </div>
-
     <script>
         function toggleDetails(product) {
             const details = product.querySelector('.product-details');
@@ -289,7 +268,6 @@ Willhub
                 details.style.display = 'block';
             }
         }
-
         function toggleLanguage() {
             const languagePairs = document.querySelectorAll('.language-pair');
             languagePairs.forEach(pair => {
